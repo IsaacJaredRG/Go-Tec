@@ -40,9 +40,9 @@
 
     <EditText
         android:id="@+id/contra"
-        android:layout_width="360dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="416dp"
+        android:layout_width="356dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="400dp"
         android:background="@drawable/edit_text_redondeados"
         android:ems="10"
         android:gravity="center"
@@ -53,40 +53,45 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/registrarse"
-        android:layout_width="271dp"
-        android:layout_height="43dp"
+        android:layout_width="84dp"
+        android:layout_height="29dp"
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
-        android:text="¿No Tienes Cuenta? Registrate"
+        android:text=" Registrate"
+        android:textColor="@color/hueso"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/olvidada"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:text="Olvidé mi contraseña"
         android:textColor="@color/hueso"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contra"
-        app:layout_constraintVertical_bias="0.27" />
-
-    <TextView
-        android:id="@+id/olvidada"
-        android:layout_width="271dp"
-        android:layout_height="43dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:clickable="true"
-        android:textColor="@color/hueso"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="641dp" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="208dp"
-        android:layout_height="64dp"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
         android:background="@drawable/botoncito"
         android:text="Iniciar sesion"
         android:textSize="24sp"
@@ -94,9 +99,24 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.688" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="¿No tienes cuenta?"
+        android:textColor="@color/hueso"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,12 +6,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_gotec"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_gotec_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gotec"
         tools:targetApi="31">
+        <activity
+            android:name=".PasajeroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConductorActivity"
+            android:exported="false" />
         <activity
             android:name=".RegistrarViaje"
             android:exported="false" />
