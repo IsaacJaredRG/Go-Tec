@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,10 +17,30 @@
         android:theme="@style/Theme.Gotec"
         tools:targetApi="31">
         <activity
-            android:name=".PasajeroActivity"
+            android:name=".Chat"
             android:exported="false" />
         <activity
-            android:name=".ConductorActivity"
+            android:name=".lista_chats"
+            android:exported="false" />
+        <activity
+            android:name=".ViajeEnDetalles"
+            android:exported="false" />
+        <activity
+            android:name=".ViajeEnDetalle"
+            android:exported="false" />
+        <activity
+            android:name=".VerViajes"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBVxyQPkFQ0l-3wZr-aoeeXFABK2EiKseM" />
+
+        <activity
+            android:name=".PasswordOlvidada"
+            android:exported="false" />
+        <activity
+            android:name=".PasajeroActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrarViaje"

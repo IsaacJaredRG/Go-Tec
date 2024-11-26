@@ -4,6 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/guindo"
     tools:context=".PasajeroActivity">
 
+    <Button
+        android:id="@+id/BtnVerViajes"
+        android:layout_width="282dp"
+        android:layout_height="81dp"
+        android:background="@drawable/botoncito"
+        android:text="Ver Viajes"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        android:textColor="@color/hueso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <Button
+        android:id="@+id/BtnVerMensajePajasero"
+        android:layout_width="283dp"
+        android:textColor="@color/hueso"
+        android:layout_height="82dp"
+        android:background="@drawable/botoncito"
+        android:text="Ver mensajes"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <Button
+        android:id="@+id/BtnSalirPasajero"
+        android:layout_width="283dp"
+        android:textColor="@color/hueso"
+        android:layout_height="82dp"
+        android:background="@drawable/botoncito"
+        android:text="Cerrar sesion"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
 </androidx.constraintlayout.widget.ConstraintLayout>

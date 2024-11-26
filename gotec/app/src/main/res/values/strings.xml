@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">gotec</string>
+    <string name="menu_salir">Cerrar sesión</string>
 </resources>
